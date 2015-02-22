@@ -1,0 +1,16 @@
+<html>
+<body>
+<p>
+Welcome to URL shortener
+</p>
+<form action="/create" method="post">
+  <label for="task_name">Input URL here:</label>
+  <input type="text" id="task_name" name="long_url_name">
+  <input type="submit">
+</form>
+
+<% if defined? short_url %>
+<p> <%= short_url %> </p>
+<% end %>
+</body>
+</html>
